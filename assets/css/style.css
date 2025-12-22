@@ -1669,7 +1669,8 @@ h2.about-pre-title {
 
 
 .service-item h5 {
-    background: var(--primary-color);
+   background-color: #FF8A00;
+
     margin-bottom: 60px;
     color: var(--black-color);
     font-family: var(--text-font);
@@ -1708,7 +1709,7 @@ h2.about-pre-title {
 
 .service-item:hover.service-item i {
     rotate: 45deg;
-    color: var(--primary-color);
+    color: #FF8A00;
 }
 
 .service-item:hover .details-btn {
