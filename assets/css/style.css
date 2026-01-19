@@ -838,7 +838,7 @@ html {
 }
 
 .logo img {
-    width: 70px;
+    width: 112px;
 }
 
 .main-menu {
@@ -1229,13 +1229,13 @@ html {
 .main-hero-area {
     padding-top: 300px;
     padding-bottom: 100px;
-    background: url(../images/custom/hero-bg.jpg) no-repeat;
+    background: url(/HomePageAssests/H00.png) no-repeat;
     background-position: top center;
     background-size: 100% auto;
 }
 
 .main-hero-image-area {
-    background: url(../images/hero-image.jpg) no-repeat;
+    background: url(/HomePageAssests/H00.png) no-repeat;
     background-size: cover;
     z-index: 1;
     position: relative;
