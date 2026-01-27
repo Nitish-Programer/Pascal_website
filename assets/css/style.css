@@ -1226,19 +1226,71 @@ html {
 * 04.HEADER CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-.main-hero-area {
-    padding-top: 300px;
-    padding-bottom: 100px;
-    background: url(/HomePageAssests/H00.png) no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
+.hero-title {
+    font-size: clamp(36px, 6vw, 75px);
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.main-hero-image-area {
-    background: url(/HomePageAssests/H00.png) no-repeat;
-    background-size: cover;
-    z-index: 1;
+.hero-text {
+    font-size: clamp(14px, 2vw, 18px);
+    max-width: 720px;
+    margin: 20px auto;
+}
+
+/* Extra fine tuning (optional) */
+@media (max-width: 768px) {
+    .hero-heading {
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.hero-bg {
     position: relative;
+    min-height: 100vh;              /* Full screen height */
+  
+    background-size: cover;         /* responsive cover */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark overlay for better text visibility */
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* overlay */
+    z-index: 1;
+}
+
+.hero-bg .container {
+    position: relative;
+    z-index: 2; /* text overlay ke upar */
+}
+
+/* Text styling */
+.hero-bg h2,
+.hero-bg p {
+    color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero-bg {
+        min-height: 80vh;
+        padding: 60px 0;
+    }
+
+    .hero-bg h2 {
+        font-size: 32px;
+    }
+
+    .hero-bg p {
+        font-size: 16px;
+    }
 }
 
 
